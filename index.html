@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1><a href="index.html" class="logo-head">Daily<span>Scope</span></a></h1>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home" class="link">Home</a></li>
+                <li><a href="#latest" class="link">Latest</a></li>
+                <li><a href="#trending" class="link">Trending</a></li>
+                <li><a href="#about" class="link">About</a></li>
+            </ul>
+        </nav>
+        <div class="buttons">
+            <button class="actionBtn searchBtn" aria-label="Open search bar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" class="inputSearch" placeholder="Search Articles">
+            <button class="actionBtn subBtn">Subscribe</button>
+            <button class="actionBtn burgerBtn" aria-label="Toggle navigation menu">☰</button>
+            <!-- ✖, ☰ -->
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero-section section" id="home">
+            <article class="primary-article">
+                <img src="Images/primary-img.png" alt="Primary Pic" class="primary-img">
+                <p class="category-badge tag">TECHNOLOGY</p>
+                <h1>How Artificial Intelligence is Changing Everyday Life</h1>
+                <p class="description intro">From smarter tools to personalized digital experiences, artificial intelligence is becoming part of everyday life.</p>
+                <p class="name">Author Name:Ayesha Khan</p>
+                <p class="time">Date & Reading Time:August 10,2026 .6 min read</p>
+                <button class="readMoreBtn hero-btn">Read More</button>
+            </article>
+            <div class="secondary-articles">
+                <article class="article-1 card">
+                    <img src="Images/secondary-imges/card-1.png" alt="technology img" class="card-img">
+                    <h2>The Rise of AI-Powered Productivity Tools</h2>
+                    <p class="category-badge tag">TECHNOLOGY</p>
+                    <p class="time">Date & Tme:August 9,2026 .5 min read</p>
+                </article>
+                <article class="article-2 card">
+                    <img src="Images/secondary-imges/card-2.png" alt="business img" class="card-img">
+                    <h2>Small Businesses Are Building Digital Brands</h2>
+                    <p class="category-badge tag">BUSINESS</p>
+                    <p class="time">Date & Time:August 8,2026 .4 min read</p>
+                </article>
+                <article class="article-3 card">
+                    <img src="Images/secondary-imges/card-3.png" alt="lifestyle img" class="card-img">
+                    <h2>Simple Habits for a More Productive Day</h2>
+                    <p class="category-badge tag">LIFESTYLE</p>
+                    <p class="time">Date & Time:August 7,2026 .4 min read</p>
+                </article>
+                <article class="article-4 card">
+                    <img src="Images/secondary-imges/card-4.png" alt="science img" class="card-img">
+                    <h2>What New Technology Can Teach Us About Space</h2>
+                    <p class="category-badge tag">SCIENCE</p>
+                    <p class="time">Date & Time:August 6,2026 .7 min read</p>
+                </article>
+            </div>
+        </section>
+        <section class="latest-section section" id="latest">
+            <h2>Latest Stories</h2>
+            <div class="filterBtns">
+                <button class="filter-btn active" data-category="all">all</button>
+                <button class="filter-btn" data-category="technology">Technology</button>
+                <button class="filter-btn" data-category="business">Business</button>
+                <button class="filter-btn" data-category="lifestyle">Lifestyle</button>
+                <button class="filter-btn" data-category="science">Science</button>
+                <button class="filter-btn" data-category="world">World</button>
+            </div>
+            <div class="latest-data">
+                <article class="latest-card card" data-category="technology">
+                    <p class="tag">TECHNOLOGY</p>
+                    <img src="Images/latest-section/card-1.png" alt="technolgy img" class="latest-img">
+                    <h3>Cyber Security Essentials for Modern Remote Workers</h3>
+                    <p class="dis">Practical steps and essential tools to secure your personal data while working from anywhere in the world.</p>
+                    <p class="name">Author Name:Sara Ahmad</p>
+                     <p class="date">Publish Date:August 10,2026</p>
+                     <p class="time">4 min read</p>
+                     <button class="readMoreBtn read">Read More</button>
+                </article>
+                <article class="latest-card card" data-category="business">
+                    <p class="tag">BUSINESS</p>
+                    <img src="Images/latest-section/card-2.png" alt="business img" class="latest-img">
+                    <h3>How E-Commerce Trends Are Reshaping Global Retail</h3>
+                    <p class="dis">Exploring new online shopping habits amd how local brands are competing successfully in international markets.</p>
+                     <p class="name">Autor Name:Ali Raza</p>
+                     <p class="date">Publish Date:August 9,2026</p>
+                     <p class="time">5 min read</p>
+                     <button class="readMoreBtn read">Read More</button>
+                </article>
+                <article class="latest-card card" data-category="lifestyle">
+                    <p class="tag">LIFESTYLE</p>
+                    <img src="Images/latest-section/card-3.png" alt="lifestyle img" class="latest-img">
+                    <h3>Building a Sustainable Daily Routine in a Busy World</h3>
+                    <p class="dis">Small daily habit changes that improve physical health, mental focus, and overall everyday productivity.</p>
+                     <p class="name">Author Name:Usman Malik</p>
+                     <p class="date">Publish Date:August 8,2026</p>
+                     <p class="time">3 min read</p>
+                     <button class="readMoreBtn read">Read More</button>
+                </article>
+                <article class="latest-card card" data-category="science">
+                    <p class="tag">SCIENCE</p>
+                    <img src="Images/latest-section/card-4.png" alt="science img" class="latest-img">
+                    <h3>Recent Breakthroughs in Renewable Clean Energy Tech</h3>
+                    <p class="dis">Solar and wind power innovations that are making green energy options more accessible and efficient worldwide.</p>
+                     <p class="name">Author Name:Dr.Hena Zafar</p>
+                     <p class="date">Publish Date:August 7,2026</p>
+                     <p class="time">6 min read</p>
+                     <button class="readMoreBtn read">Read More</button>
+                </article>
+                <article class="latest-card card" data-category="world">
+                    <p class="tag">WORLD</p>
+                    <img src="Images/latest-section/card-5.png" alt="world img" class="latest-img">
+                    <h3>Global Cities Adapting to Smart Public Transport Systems</h3>
+                    <p class="dis">How modern urban centers are effectively reducing traffic congestion with intelligent transit networks.</p>
+                     <p class="name">Author Name:Hamza Tariq</p>
+                     <p class="date">Publish Date:August 6,2026</p>
+                     <p class="time">5 min read</p>
+                     <button class="readMoreBtn read">Read More</button>
+                </article>
+                <article class="latest-card card" data-category="technology">
+                    <p class="tag">TECHNOLOGY</p>
+                    <img src="Images/latest-section/card-6.png" alt="tecnology img" class="latest-img">
+                    <h3>The Future of Cloud Storage and Personal Data Privacy</h3>
+                    <p class="dis">Understanding how encryption an decentralized storage systems are keeping user files safer than ever.</p>
+                     <p class="name">Author Name:Bilal Hassan</p>
+                     <p class="date">Publish Date:August 5,2026</p>
+                     <p class="time">4 min read</p>
+                     <button class="readMoreBtn read">Read More</button>
+                </article>
+            </div>
+              <div class="no-results hide">
+              <h3>No Matching Stories Found 🔍</h3>
+              <p>Try searching with a different word or tag.</p>
+            </div>
+        </section>
+        <section class="trending-section section" id="trending">
+            <h2>Trending Now</h2>
+            <div class="trending-articles">
+                <article class="trending-card card">
+                    <div class="ran-head">
+                    <p class="ranking">1.</p>
+                    <h3>The Breakthrough in Solid-State Battery Tech</h3>
+                    </div>
+                    <p class="tag">TECHNOLOGY</p>
+                    <p class="time">3 min read</p>
+                </article>
+                <article class="trending-card card">
+                    <div class="ran-head">
+                    <p class="ranking">2.</p>
+                    <h3>Global Markets Respond to New Economic Policies</h3>
+                    </div>
+                    <p class="tag">BUSINESS</p>
+                    <p class="time">4 min read</p>
+                </article>
+                <article class="trending-card card">
+                    <div class="ran-head">
+                    <p class="ranking">3.</p>
+                    <h3>Top 5 Mindful Living Practices for Daily Wellness</h3>
+                    </div>
+                    <p class="tag">LIFESTYLE</p>
+                    <p class="time">5 min read</p>
+                </article>
+                <article class="trending-card card">
+                    <div class="ran-head">
+                    <p class="ranking">4.</p>
+                    <h3>Mars Rover Discovers Ancient Riverbed Formations</h3>
+                    </div>
+                    <p class="tag">SCIENCE</p>
+                    <p class="time">4 min read</p>
+                </article>
+            </div>
+        </section>
+        <section class="subscription-section section">
+            <h2>Stay Informed</h2>
+            <p class="text">Subscribe to our newsletter to get the latest tech news, business insights, and lifestyle stories delivered directly to your inbox.</p>
+            <form class="form">
+                <div class="input-group">
+                    <div class="input">
+                    <label for="email">Email:</label>
+                    <input type="email" class="inputEmail" id="email" placeholder="example@gmail.com">
+                    </div>
+                    <p class="emailMessage"></p>
+                </div>
+                <button type="submit" class="submitBtn">Subscribe</button>
+                <p class="message"></p>
+            </form>
+        </section>
+        <section class="about-section section" id="about">
+            <h2>About Us</h2>
+            <p class="about">
+                Daily Scope is an independent digital publication dedicated to providing insightful, reliable, and timely coverage of global technology, business, science, and lifestyle topics. Our mission is to simplify complex news and bring you clear perspectives on the innovations and stories shaping our world.
+            </p>
+            <p class="about">
+                Whether it’s breakthroughs in AI, shifting economic trends, or daily productivity habits, we aim to keep our readers informed, engaged, and ahead of the curve.
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="logo-dis">
+        <h2><a href="index.html" class="logo-head">Daily<span>Scope</span></a></h2>
+        <p class="dis">Daily Scope is your trusted digital publication delivering the latest news and insights in technology, business, science, and lifestyle.</p>
+    </div>
+    <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul class="quick-link">
+            <li><a href="#home" class="link">Home</a></li>
+            <li><a href="#latest" class="link">Latest</a></li>
+            <li><a href="#trending" class="link">Trending</a></li>
+            <li><a href="#about" class="link">About</a></li>
+        </ul>
+    </div>
+    <div class="social-copy">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2026 Daily Scope. All rights reserved. Designed with passion.</p>
+    </div>
+</footer>
+<button class="backBtn" aria-label="Scroll back to top of page">↑</button>
+    <script src="JS/script.js"></script>
+</body>
+</html>
