@@ -50,7 +50,6 @@ const inputEmail = document.querySelector(".inputEmail");
 const emailMessage = document.querySelector(".emailMessage");
 const message = document.querySelector(".message");
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
 inputEmail.addEventListener("input", () => {
     validateEmail();
 });
